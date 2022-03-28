@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+ 
+    "name": "AutolistSearcher",
+    "version": "1.0",    
+    "icons": {            
+            "128": "images/a26.png"
+    },
+ 
+    "content_scripts": [
+        {
+            "matches": [ "http://autolist.com/*/"],
+            "js": [ "content_scripts/end.js"],
+            "run_at": "document_end"
+        }
+    ],
+	"permissions": ["webRequest"],
+    "host_permissions": ["http://autolist.com/*/"],
+    "action": {
+          "default_icon": {            
+            "128": "images/a26.png"
+          },
+    "default_title": "Autolist",
+    "default_popup": "popup/popup.html"
+    }
+}

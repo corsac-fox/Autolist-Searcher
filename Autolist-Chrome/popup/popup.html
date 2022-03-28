@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">  
+  <title></title>
+  </head>
+  
+  <style>
+    html,
+    body {
+	  display: flex;
+      font-family: 'Open Sans', sans-serif;
+      font-size:15px;
+      min-height: 100px;
+      width: 90px;
+	  align: left;
+      vertical-align: middle;
+      background-color: #FFB7AE;
+	  justify-content: space-between;
+	}
+	.button {
+	  align: middle;
+	  background-color: #FF3B21;
+	  width: 100%;
+	}
+	</style>
+  
+  <body>    
+	<form id="form">
+  <div>
+    <input type="radio" id="makeChoice1"
+     name="make" value="Audi" checked>
+    <label for="makeChoice1">Audi</label>
+
+    <input type="radio" id="makeChoice2"
+     name="make" value="Ford">
+    <label for="makeChoice2">Ford</label>
+
+    <input type="radio" id="makeChoice3"
+     name="make" value="Toyota">
+    <label for="makeChoice3">Toyota</label>
+  
+    <br></br>  
+    <button type="submit" class="button" id="button">search</button>
+    </div>	  
+  </form>
+  
+  <script src="popup.js">
+  </script>
+  </body>
+</html>
